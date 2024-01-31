@@ -1,6 +1,10 @@
 html {
-    background-color: black;
+    background-color: #050113;
 }
 * {
     color: white;
+}
+
+.banner {
+    max-width: 100%;
 }
