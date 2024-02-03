@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     {% include "basehead.html" %}
+    {% block head %}{% endblock %}
+    
 </head>
 <body>
     <header>
-        
+        {% block header %}{% endblock %}        
     </header>
     {{content | safe}}
 </body>
