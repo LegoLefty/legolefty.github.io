@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
     return {
         dir: {
             includes: "_includes",
-            output: "_static",
+            output: "docs",
         },
         templateFormats: ["md", "njk", "html"],
         markdownTemplateEngine: "njk",
