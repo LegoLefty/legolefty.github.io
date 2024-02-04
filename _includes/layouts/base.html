@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "basehead.html" %}
-    {% block head %}{% endblock %}
-    
+	{% include "basehead.html" %}
+	{% block head %}{% endblock %}
+	
 </head>
 <body>
-    <header>
-        {% block header %}{% endblock %}        
-    </header>
-    {{content | safe}}
+	<header>
+		{% block header %}{% endblock %}
+		{% include "nav.njk" %}
+	</header>
+	<main>
+		{{content | safe}}
+	</main>
 </body>
 </html>
