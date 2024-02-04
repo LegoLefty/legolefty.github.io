@@ -51,11 +51,14 @@ ul#navlist li:last-child {
 }
 
 a.navlink {
-	padding: 0.5em 1.5em;
+	padding: 0.5em 0;
 	color: white;
 	display: block;
 	text-decoration: none;
 }
-a.navlink {
 
+@media (max-width: 412px) {
+	h1 {
+		font-size: 11vw;
+	}
 }
