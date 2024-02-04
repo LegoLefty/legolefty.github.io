@@ -21,6 +21,9 @@ h1 {
 	font-size: 3em;
 	font-family: 'major mono display', monospace;
 }
+h1 a {
+	text-decoration: none;
+}
 main {
 	box-sizing: margin-box;
 	border: 2px solid #ffffff;
