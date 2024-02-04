@@ -1,6 +1,11 @@
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech&family=Share+Tech+Mono&display=swap');
 
+:root {
+	--border: 2px solid #ffffff;
+	--base-margins: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'major mono display';
 }
@@ -14,9 +19,9 @@ body {
 	max-width: 1200px;
 }
 h1 {
-	margin: 20px;
-	border: 2px solid white;
-	padding: 20px;
+	margin: var(--base-margins);
+	border: var(--border);
+	padding: var(--base-margins);
 	text-align: center;
 	font-size: 3em;
 	font-family: 'major mono display', monospace;
@@ -26,16 +31,17 @@ h1 a {
 }
 main {
 	box-sizing: margin-box;
-	border: 2px solid #ffffff;
-	margin: 20px;
+	border: var(--border);
+	margin: var(--base-margins);
 }
 p {
 	font-size: 1.5em;
 	font-family: monospace;
 }
 nav {
-	border: 2px solid white;
-	margin: 20px;
+	border: var(--border);
+	margin: var(--base-margins);
+	font-family: 'major mono display', monospace;
 }
 ul#navlist {
 	display: flex;
@@ -47,21 +53,27 @@ ul#navlist {
 li.navitem {
 	flex-grow: 1;
 	text-align: center;
-	border-right: 2px solid white;
+	border-right: var(--border);
 }
 ul#navlist li:last-child {
 	border-right: none;
 }
 
 a.navlink {
-	padding: 0.5em 0;
+	padding: .5em 0;
 	color: white;
 	display: block;
 	text-decoration: none;
+	font-size: 1.5rem;
 }
 
 @media (max-width: 412px) {
 	h1 {
 		font-size: 11vw;
+	}
+}
+@media (max-width: 630px) {
+	a.navlink {
+		font-size: 4vw;
 	}
 }
