@@ -1,5 +1,5 @@
-<ul>
+<ul id="navlist">
 {% for page in collections.top %}
-<li><a href="{{page.url}}">{{page.data.title}}</a></li>
+<li class="navitem"><a class="navlink" href="{{page.url}}">{{page.data.title}}</a></li>
 {% endfor %}
 </ul>

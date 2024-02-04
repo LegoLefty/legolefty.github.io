@@ -7,8 +7,9 @@
 </head>
 <body>
 	<header>
+		<h1>legolefty creative endeavors</h1>
 		{% block header %}{% endblock %}
-		{% include "nav.njk" %}
+		<nav>{% include "nav.njk" %}</nav>
 	</header>
 	<main>
 		{{content | safe}}
