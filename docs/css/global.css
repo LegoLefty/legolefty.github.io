@@ -5,6 +5,30 @@
 	--border: 2px solid #ffffff;
 	--base-margins: 1rem;
 }
+ul.projectlist {
+	border: var(--border);
+	margin: var(--base-margins);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style-type: none;
+	padding: var(--base-margins);
+}
+li.projectitem {
+	color: white;
+	border: var(--border);
+	margin: var(--base-margins);
+}
+a.projectlink {
+	display: block;
+	font-family: 'major mono display', monospace;
+}
+a.linktext {
+	padding: var(--base-margins);
+}
+img.projecticon {
+	width: 100%;
+	display: block;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'major mono display';

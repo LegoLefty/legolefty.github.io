@@ -1,0 +1,13 @@
+---
+layout: "layouts/base.html"
+title: "Projects"
+tags: ["top"]
+---
+
+<h2>Projects</h2>
+<p>some of my projects will eventually be listed here</p>
+<ul class="projectlist">
+{% for project in collections.projects %}
+<li class="projectitem"><a class="projectlink" href="{{project.url}}"><img class="projecticon" src="/assets/project-images/{{project.data.image}}"></a><a class="projectlink linktext">{{project.data.title}}</a></li>
+{% endfor %}
+</ul>
