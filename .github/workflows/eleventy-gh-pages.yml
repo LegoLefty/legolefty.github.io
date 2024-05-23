@@ -1,4 +1,3 @@
----
 # Workflow for building and deploying an Eleventy static site to GitHub Pages via an Action
 name: Deploy Eleventy with GitHub Pages dependencies preinstalled
 
@@ -56,4 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
----
